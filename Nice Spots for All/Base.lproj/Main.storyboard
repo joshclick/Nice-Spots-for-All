@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="74r-qM-lTu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,86 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="B0i-wX-9dD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRf-x2-PnU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Add Current Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickAdd:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qX9-2I-nYd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eRf-x2-PnU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="APE-3W-3H1"/>
+                            <constraint firstItem="B0i-wX-9dD" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="BJl-Se-OEl"/>
+                            <constraint firstItem="B0i-wX-9dD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Bsv-M2-Kn7"/>
+                            <constraint firstAttribute="trailing" secondItem="B0i-wX-9dD" secondAttribute="trailing" id="Hyd-oA-x84"/>
+                            <constraint firstItem="eRf-x2-PnU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="acJ-aw-X8y"/>
+                            <constraint firstItem="B0i-wX-9dD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="nPk-lP-T53"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="B0i-wX-9dD"/>
+                                <exclude reference="eRf-x2-PnU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="BJl-Se-OEl"/>
+                                <exclude reference="Bsv-M2-Kn7"/>
+                                <exclude reference="Hyd-oA-x84"/>
+                                <exclude reference="nPk-lP-T53"/>
+                                <exclude reference="APE-3W-3H1"/>
+                                <exclude reference="acJ-aw-X8y"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="B0i-wX-9dD"/>
+                                <include reference="eRf-x2-PnU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="BJl-Se-OEl"/>
+                                <include reference="Bsv-M2-Kn7"/>
+                                <include reference="Hyd-oA-x84"/>
+                                <include reference="nPk-lP-T53"/>
+                                <include reference="APE-3W-3H1"/>
+                                <include reference="acJ-aw-X8y"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="ViW-gx-d4g">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="B0i-wX-9dD" id="OlS-UL-9ER"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1123.5" y="-282.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xq0-MR-TGD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="74r-qM-lTu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1M4-S1-D6W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Whb-KE-GdH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxz-dY-nd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="-282.75"/>
         </scene>
     </scenes>
 </document>

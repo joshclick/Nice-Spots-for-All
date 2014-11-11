@@ -14,6 +14,7 @@
 		03283E141A129ACC00F5A532 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03283E131A129ACC00F5A532 /* Images.xcassets */; };
 		03283E171A129ACC00F5A532 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03283E151A129ACC00F5A532 /* LaunchScreen.xib */; };
 		03283E231A129ACC00F5A532 /* Nice_Spots_for_AllTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03283E221A129ACC00F5A532 /* Nice_Spots_for_AllTests.m */; };
+		03283E2D1A12A10700F5A532 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03283E2C1A12A10700F5A532 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		03283E1C1A129ACC00F5A532 /* Nice Spots for AllTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nice Spots for AllTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03283E211A129ACC00F5A532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03283E221A129ACC00F5A532 /* Nice_Spots_for_AllTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nice_Spots_for_AllTests.m; sourceTree = "<group>"; };
+		03283E2C1A12A10700F5A532 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03283E2D1A12A10700F5A532 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		03283DFA1A129ACC00F5A532 = {
 			isa = PBXGroup;
 			children = (
+				03283E2C1A12A10700F5A532 /* MapKit.framework */,
 				03283E051A129ACC00F5A532 /* Nice Spots for All */,
 				03283E1F1A129ACC00F5A532 /* Nice Spots for AllTests */,
 				03283E041A129ACC00F5A532 /* Products */,
@@ -411,6 +415,7 @@
 				03283E281A129ACC00F5A532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03283E291A129ACC00F5A532 /* Build configuration list for PBXNativeTarget "Nice Spots for AllTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				03283E2B1A129ACC00F5A532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
