@@ -50,6 +50,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-41" y="120"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VJa-ek-BpJ">
+            <objects>
+                <viewController id="eP5-Ch-zU9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dQC-xF-LEj"/>
+                        <viewControllerLayoutGuide type="bottom" id="A3t-mE-88j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kp2-Fx-ls6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mO7-8e-787" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="120"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="69z-LJ-MNB">
+            <objects>
+                <viewController id="M4x-XY-aAR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lLW-wT-YUD"/>
+                        <viewControllerLayoutGuide type="bottom" id="P7S-Ye-3eQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KHS-uA-b7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Va3-FD-2NO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="-192"/>
         </scene>
     </scenes>
 </document>
