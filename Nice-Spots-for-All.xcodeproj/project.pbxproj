@@ -10,6 +10,7 @@
 		AA11E1AA1A31673D005EF396 /* find.png in Resources */ = {isa = PBXBuildFile; fileRef = AA11E1A71A31673D005EF396 /* find.png */; };
 		AA11E1AB1A31673D005EF396 /* friend.png in Resources */ = {isa = PBXBuildFile; fileRef = AA11E1A81A31673D005EF396 /* friend.png */; };
 		AA11E1AC1A31673D005EF396 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = AA11E1A91A31673D005EF396 /* logout.png */; };
+		AA5FC5CA1A3189750059C3F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5FC5C91A3189750059C3F6 /* Images.xcassets */; };
 		F4D9AD1F1871725500E2D912 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D9AD1E1871725500E2D912 /* SWRevealViewController.m */; };
 		F4EECF12177C99F400778578 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF11177C99F400778578 /* UIKit.framework */; };
 		F4EECF14177C99F400778578 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF13177C99F400778578 /* Foundation.framework */; };
@@ -36,6 +37,7 @@
 		AA11E1A71A31673D005EF396 /* find.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = find.png; path = "../../Nice-Spots-for-All/Nice-Spots-for-All/find.png"; sourceTree = "<group>"; };
 		AA11E1A81A31673D005EF396 /* friend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = friend.png; path = "../../Nice-Spots-for-All/Nice-Spots-for-All/friend.png"; sourceTree = "<group>"; };
 		AA11E1A91A31673D005EF396 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = "../../Nice-Spots-for-All/Nice-Spots-for-All/logout.png"; sourceTree = "<group>"; };
+		AA5FC5C91A3189750059C3F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../temp/Facebook Login Sample/Facebook Login Sample/Images.xcassets"; sourceTree = "<group>"; };
 		F4D9AD1D1871725500E2D912 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F4D9AD1E1871725500E2D912 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F4EECF0E177C99F400778578 /* Nice-Spots-for-All.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nice-Spots-for-All.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 				F4EECF6D177FD51300778578 /* MapViewController.m */,
 				F4EECF73177FF90500778578 /* PhotoViewController.h */,
 				F4EECF74177FF90600778578 /* PhotoViewController.m */,
+				AA5FC5C91A3189750059C3F6 /* Images.xcassets */,
 				F4EECF34177C9A1E00778578 /* Library */,
 				F4EECF18177C99F400778578 /* Supporting Files */,
 			);
@@ -229,6 +232,7 @@
 				F4EECF2B177C99F400778578 /* MainStoryboard.storyboard in Resources */,
 				AA11E1AC1A31673D005EF396 /* logout.png in Resources */,
 				F4EECF67177F4AB000778578 /* nav_bg.png in Resources */,
+				AA5FC5CA1A3189750059C3F6 /* Images.xcassets in Resources */,
 				F4EECF6A177F4C0200778578 /* menu.png in Resources */,
 				F4EECF6B177F4C0200778578 /* menu@2x.png in Resources */,
 			);
