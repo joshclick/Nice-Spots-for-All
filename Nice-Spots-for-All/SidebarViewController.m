@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
 
-    menuItems = @[@"title", @"map", @"friends", @"logout"];
+    menuItems = @[@"title", @"map", @"locations", @"friends", @"logout"];
 }
 
 - (void)didReceiveMemoryWarning

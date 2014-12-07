@@ -1,26 +1,33 @@
 //
-//  ViewController.m
+//  MapViewController.m
 //  Nice-Spots-for-All
 //
 //  Created by Abhijai on 12/4/14.
 //  Copyright (c) 2014 abhijaigarg. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "LogoutViewController.h"
 #import "SWRevealViewController.h"
 
-@interface MainViewController ()
+@interface LogoutViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation LogoutViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.title = @"Map";
-
+    
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     

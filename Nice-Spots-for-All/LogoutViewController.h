@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapViewController.h
 //  Nice-Spots-for-All
 //
 //  Created by Abhijai on 12/4/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface LogoutViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end
