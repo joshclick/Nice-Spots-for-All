@@ -64,6 +64,7 @@
 }
 
 - (IBAction)clickAdd:(id)sender {
+    _mapView.centerCoordinate = _mapView.userLocation.location.coordinate;
     _locationNameField.hidden = NO;
     _saveLocationButton.hidden = NO;
 }
