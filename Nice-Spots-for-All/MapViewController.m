@@ -16,6 +16,7 @@
 @interface MapViewController ()
 
 @property (nonatomic, strong) DBManager *dbManager;
+@property (nonatomic, strong) NSArray *arrLocations;
 
 @end
 
@@ -55,6 +56,38 @@
     _mapView.showsUserLocation = YES;
     
     _mapView.centerCoordinate = _mapView.userLocation.location.coordinate;
+    
+    [self addAnnotationsToMap];
+}
+
+- (void)addAnnotationsToMap {
+    NSString *query = @"select * from locations";
+    
+    // Get the results.
+    if (_arrLocations != nil) {
+        _arrLocations = nil;
+    }
+    _arrLocations = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];
+    NSInteger indexOfName = [self.dbManager.arrColumnNames indexOfObject:@"name"];
+    NSInteger indexOfLat = [self.dbManager.arrColumnNames indexOfObject:@"lat"];
+    NSInteger indexOfLong = [self.dbManager.arrColumnNames indexOfObject:@"long"];
+
+    //Read locations details from plist
+    for (int i = 0; i < [_arrLocations count]; i++) {
+        NSNumber *latitude = [[self.arrLocations objectAtIndex:i] objectAtIndex:indexOfLat];
+        NSNumber *longitude = [[self.arrLocations objectAtIndex:i] objectAtIndex:indexOfLong];
+        NSString *title = [[self.arrLocations objectAtIndex:i] objectAtIndex:indexOfName];
+        //Create coordinates from the latitude and longitude values
+        CLLocationCoordinate2D coord;
+        coord.latitude = latitude.doubleValue;
+        coord.longitude = longitude.doubleValue;
+        
+        MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+        annotation.coordinate = coord;
+        annotation.title = title;
+        
+        [_mapView addAnnotation:annotation];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,6 +124,12 @@
     // If the query was successfully executed then pop the view controller.
     if (_dbManager.affectedRows != 0) {
         NSLog(@"Query was executed successfully. Affected rows = %d", _dbManager.affectedRows);
+        
+        MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+        annotation.coordinate = _mapView.userLocation.location.coordinate;
+        annotation.title = _locationNameField.text;
+        
+        [_mapView addAnnotation:annotation];
         
         _locationNameField.text = @"";
         _locationNameField.hidden = YES;

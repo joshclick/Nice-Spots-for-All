@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03401F5C1A3A2D7F00D71777 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03401F5B1A3A2D7F00D71777 /* Images.xcassets */; };
 		03F330371A34ED1800206A40 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F330361A34ED1800206A40 /* libsqlite3.dylib */; };
 		03F3303A1A34EDD300206A40 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F330391A34EDD300206A40 /* DBManager.m */; };
 		03F3303C1A34EFB300206A40 /* locations.sql in Resources */ = {isa = PBXBuildFile; fileRef = 03F3303B1A34EFB300206A40 /* locations.sql */; };
@@ -21,7 +22,6 @@
 		F4EECF12177C99F400778578 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF11177C99F400778578 /* UIKit.framework */; };
 		F4EECF14177C99F400778578 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF13177C99F400778578 /* Foundation.framework */; };
 		F4EECF16177C99F400778578 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF15177C99F400778578 /* CoreGraphics.framework */; };
-		F4EECF1C177C99F400778578 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4EECF1A177C99F400778578 /* InfoPlist.strings */; };
 		F4EECF1E177C99F400778578 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EECF1D177C99F400778578 /* main.m */; };
 		F4EECF22177C99F400778578 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EECF21177C99F400778578 /* AppDelegate.m */; };
 		F4EECF24177C99F400778578 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EECF23177C99F400778578 /* Default.png */; };
@@ -40,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03401F5B1A3A2D7F00D71777 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03F330361A34ED1800206A40 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		03F330381A34EDD300206A40 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		03F330391A34EDD300206A40 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		F4EECF13177C99F400778578 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4EECF15177C99F400778578 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F4EECF19177C99F400778578 /* Nice-Spots-for-All-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nice-Spots-for-All-Info.plist"; sourceTree = "<group>"; };
-		F4EECF1B177C99F400778578 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F4EECF1D177C99F400778578 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4EECF1F177C99F400778578 /* Nice-Spots-for-All-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nice-Spots-for-All-Prefix.pch"; sourceTree = "<group>"; };
 		F4EECF20177C99F400778578 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +156,7 @@
 				AA5FC5C91A3189750059C3F6 /* Images.xcassets */,
 				03F3303B1A34EFB300206A40 /* locations.sql */,
 				F4EECF34177C9A1E00778578 /* Library */,
+				03401F5B1A3A2D7F00D71777 /* Images.xcassets */,
 				F4EECF18177C99F400778578 /* Supporting Files */,
 			);
 			path = "Nice-Spots-for-All";
@@ -166,7 +167,6 @@
 			children = (
 				F4EECF53177F37CB00778578 /* Images */,
 				F4EECF19177C99F400778578 /* Nice-Spots-for-All-Info.plist */,
-				F4EECF1A177C99F400778578 /* InfoPlist.strings */,
 				F4EECF1D177C99F400778578 /* main.m */,
 				F4EECF1F177C99F400778578 /* Nice-Spots-for-All-Prefix.pch */,
 				F4EECF23177C99F400778578 /* Default.png */,
@@ -249,10 +249,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4EECF1C177C99F400778578 /* InfoPlist.strings in Resources */,
 				F4EECF24177C99F400778578 /* Default.png in Resources */,
 				AA11E1AA1A31673D005EF396 /* find.png in Resources */,
 				F4EECF26177C99F400778578 /* Default@2x.png in Resources */,
+				03401F5C1A3A2D7F00D71777 /* Images.xcassets in Resources */,
 				F4EECF28177C99F400778578 /* Default-568h@2x.png in Resources */,
 				AA11E1AB1A31673D005EF396 /* friend.png in Resources */,
 				F4EECF2B177C99F400778578 /* MainStoryboard.storyboard in Resources */,
@@ -288,14 +288,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F4EECF1A177C99F400778578 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4EECF1B177C99F400778578 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		F4EECF29177C99F400778578 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,6 +358,8 @@
 		F4EECF32177C99F400778578 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Nice-Spots-for-All",
@@ -382,6 +376,8 @@
 		F4EECF33177C99F400778578 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Nice-Spots-for-All",
