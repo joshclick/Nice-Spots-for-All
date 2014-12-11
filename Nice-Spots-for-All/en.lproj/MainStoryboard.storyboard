@@ -47,12 +47,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWE-jO-PfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1437" y="-912"/>
+            <point key="canvasLocation" x="1441" y="-836"/>
         </scene>
-        <!--Photo View Controller-->
+        <!--Friends View Controller-->
         <scene sceneID="35X-ST-BRw">
             <objects>
-                <viewController id="tiA-fo-4jg" customClass="PhotoViewController" sceneMemberID="viewController">
+                <viewController id="tiA-fo-4jg" customClass="FriendsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SeA-Hs-2UY"/>
                         <viewControllerLayoutGuide type="bottom" id="5aX-8z-YAC"/>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpc-aD-cqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="995" y="-1059"/>
+            <point key="canvasLocation" x="933" y="-1064"/>
         </scene>
         <!--Logout View Controller-->
         <scene sceneID="gbA-tY-N7d">
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1O-sx-2nD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="-410"/>
+            <point key="canvasLocation" x="1087" y="-322"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="5">
@@ -258,7 +258,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="tiA-fo-4jg" kind="custom" identifier="showPhoto" customClass="SWRevealViewControllerSegue" id="1vf-Mg-L1V"/>
+                                    <segue destination="tiA-fo-4jg" kind="custom" identifier="showFriends" customClass="SWRevealViewControllerSegue" id="1vf-Mg-L1V"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="logout" id="Gq6-3V-g1D">
@@ -378,6 +378,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zaF-c6-UNR"/>
+        <segue reference="jQ0-BX-zjj"/>
     </inferredMetricsTieBreakers>
 </document>

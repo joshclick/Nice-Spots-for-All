@@ -1,20 +1,21 @@
 //
-//  PhotoViewController.m
+//  FriendsViewController.m
 //  Nice-Spots-for-All
 //
 //  Created by Abhijai on 12/4/14.
 //  Copyright (c) 2014 abhijaigarg. All rights reserved.
 //
 
-#import "PhotoViewController.h"
+#import "FriendsViewController.h"
 #import "SWRevealViewController.h"
+#import "AppDelegate.h"
 
-@interface PhotoViewController ()
+@interface FriendsViewController ()
 
 @end
 
 
-@implementation PhotoViewController
+@implementation FriendsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     
@@ -38,9 +39,17 @@
     
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-
-    // Load image
-    self.photoImageView.image = [UIImage imageNamed:self.photoFilename];
+    
+    // get list of friends
+    [FBRequestConnection startForMyFriendsWithCompletionHandler:
+     ^(FBRequestConnection *connection, id<FBGraphUser> friends, NSError *error)
+     {
+         if(!error){    
+             NSLog(@"results = %@", friends);
+         }
+     }
+     ];
+    
 }
 
 - (void)didReceiveMemoryWarning

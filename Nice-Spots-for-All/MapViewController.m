@@ -11,6 +11,7 @@
 #import "MapViewController.h"
 #import "SWRevealViewController.h"
 #import "DBManager.h"
+#import "AppDelegate.h"
 
 
 @interface MapViewController ()

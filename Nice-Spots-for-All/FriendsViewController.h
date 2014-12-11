@@ -1,5 +1,5 @@
 //
-//  PhotoViewController.h
+//  FriendsViewController.h
 //  Nice-Spots-for-All
 //
 //  Created by Abhijai on 12/4/14.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoViewController : UIViewController
+@interface FriendsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
-@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
-@property (strong, nonatomic) NSString *photoFilename;
+
 @end

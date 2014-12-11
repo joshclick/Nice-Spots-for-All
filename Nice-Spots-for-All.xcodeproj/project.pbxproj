@@ -36,7 +36,7 @@
 		F4EECF6E177FD51400778578 /* LogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EECF6D177FD51300778578 /* LogoutViewController.m */; };
 		F4EECF70177FE9B400778578 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF6F177FE9B400778578 /* CoreLocation.framework */; };
 		F4EECF72177FE9BA00778578 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF71177FE9BA00778578 /* MapKit.framework */; };
-		F4EECF75177FF90600778578 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EECF74177FF90600778578 /* PhotoViewController.m */; };
+		F4EECF75177FF90600778578 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EECF74177FF90600778578 /* FriendsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,8 +80,8 @@
 		F4EECF6D177FD51300778578 /* LogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoutViewController.m; sourceTree = "<group>"; };
 		F4EECF6F177FE9B400778578 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F4EECF71177FE9BA00778578 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		F4EECF73177FF90500778578 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
-		F4EECF74177FF90600778578 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		F4EECF73177FF90500778578 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		F4EECF74177FF90600778578 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +149,8 @@
 				F4EECF49177DF87700778578 /* SidebarViewController.m */,
 				F4EECF6C177FD51300778578 /* LogoutViewController.h */,
 				F4EECF6D177FD51300778578 /* LogoutViewController.m */,
-				F4EECF73177FF90500778578 /* PhotoViewController.h */,
-				F4EECF74177FF90600778578 /* PhotoViewController.m */,
+				F4EECF73177FF90500778578 /* FriendsViewController.h */,
+				F4EECF74177FF90600778578 /* FriendsViewController.m */,
 				03F3303D1A34F41900206A40 /* TableViewController.h */,
 				03F3303E1A34F41900206A40 /* TableViewController.m */,
 				AA5FC5C91A3189750059C3F6 /* Images.xcassets */,
@@ -280,7 +280,7 @@
 				03F3303F1A34F41900206A40 /* TableViewController.m in Sources */,
 				F4EECF4A177DF87700778578 /* SidebarViewController.m in Sources */,
 				F4EECF6E177FD51400778578 /* LogoutViewController.m in Sources */,
-				F4EECF75177FF90600778578 /* PhotoViewController.m in Sources */,
+				F4EECF75177FF90600778578 /* FriendsViewController.m in Sources */,
 				03F3303A1A34EDD300206A40 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
