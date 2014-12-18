@@ -2,13 +2,13 @@
 //  SidebarViewController.m
 //  Nice-Spots-for-All
 //
-//  Created by Abhijai on 12/4/14.
-//  Copyright (c) 2014 abhijaigarg. All rights reserved.
+//  Created by Joshua on 12/4/14.
+//  Copyright (c) 2014 joshclick. All rights reserved.
 //
 
 #import "SidebarViewController.h"
 #import "SWRevealViewController.h"
-#import "PhotoViewController.h"
+#import "FriendsViewController.h"
 
 @interface SidebarViewController ()
 
@@ -68,13 +68,6 @@
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
     destViewController.title = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
-    
-    // Set the photo if it navigates to the PhotoView
-    if ([segue.identifier isEqualToString:@"showPhoto"]) {
-        PhotoViewController *photoController = (PhotoViewController*)segue.destinationViewController;
-        NSString *photoFilename = [NSString stringWithFormat:@"%@_photo.jpg", [menuItems objectAtIndex:indexPath.row]];
-        photoController.photoFilename = photoFilename;
-    }
     
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
         SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;

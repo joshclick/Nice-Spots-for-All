@@ -3,8 +3,8 @@
 //  Nice-Spots-for-All
 //
 //
-//  Created by Abhijai on 12/4/14.
-//  Copyright (c) 2014 abhijaigarg. All rights reserved.
+//  Created by Joshua on 12/4/14.
+//  Copyright (c) 2014 joshclick. All rights reserved.
 //
 
 
@@ -38,7 +38,7 @@
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
-    _dbManager = [[DBManager alloc] initWithDatabaseFilename:@"locations.sql"];
+    _dbManager = [[DBManager alloc] initWithDatabaseFilename:@"nsa.sql"];
     
     _locationNameField.hidden = YES;
     _saveLocationButton.hidden = YES;
@@ -72,7 +72,6 @@
     NSInteger indexOfLat = [self.dbManager.arrColumnNames indexOfObject:@"lat"];
     NSInteger indexOfLong = [self.dbManager.arrColumnNames indexOfObject:@"long"];
 
-    //Read locations details from plist
     for (int i = 0; i < [_arrLocations count]; i++) {
         NSNumber *latitude = [[self.arrLocations objectAtIndex:i] objectAtIndex:indexOfLat];
         NSNumber *longitude = [[self.arrLocations objectAtIndex:i] objectAtIndex:indexOfLong];
@@ -134,8 +133,7 @@
         _locationNameField.text = @"";
         _locationNameField.hidden = YES;
         _saveLocationButton.hidden = YES;
-    }
-    else{
+    } else {
         NSLog(@"Could not execute the query.");
     }
 }

@@ -3,7 +3,7 @@
 //  Nice Spots for All
 //
 //  Created by Josh Click on 11/15/14.
-//
+//  With much help from http://www.appcoda.com/sqlite-database-ios-app-tutorial/
 //
 
 #import "DBManager.h"
