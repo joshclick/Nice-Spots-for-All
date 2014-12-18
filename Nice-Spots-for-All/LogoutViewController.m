@@ -8,6 +8,7 @@
 
 #import "LogoutViewController.h"
 #import "SWRevealViewController.h"
+#import "AppDelegate.h"
 
 @interface LogoutViewController ()
 
@@ -27,6 +28,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // logout
+    [FBSession.activeSession closeAndClearTokenInformation];
+    
+    [self performSegueWithIdentifier: @"logout" sender: self];
+    
     
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
